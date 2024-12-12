@@ -1,0 +1,40 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CourseHelper</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>CourseHelper</h1>
+
+  <form id="course-form">
+    <label for="instructions">Enter course contents:</label>
+    <textarea id="instructions" name="instructions" rows="10" cols="50"></textarea>
+    <br>
+    <label for="file">Or upload a file:</label>
+    <input type="file" id="file" name="file" onchange="handleFileUpload(event)">
+    <br>
+    <button id="submit-button">Submit</button>
+  </form>
+  <div id="course-outline"></div>
+  <div id="comment-section" style="display: none;">
+    <h2>Comments:</h2>
+    <textarea id="comments" rows="10" cols="50"></textarea>
+    <button id="save-button">Save</button>
+  </div>
+  <button id="pdf-button">Generate PDF</button>
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
